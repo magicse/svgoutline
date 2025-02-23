@@ -173,7 +173,8 @@ class OutlinePaintEngine(QPaintEngine):
             scaled_pen_width = pen_width
 
         for poly in path.toSubpathPolygons(self._transform):
-            line = [p.toTuple() for p in inverse_transform.map(poly)]
+            #line = [p.toTuple() for p in inverse_transform.map(poly)]
+            line = [(p.x(), p.y()) for p in inverse_transform.map(poly)]
             sub_lines = dash_line(line, dash_pattern, dash_offset)
 
             self._outlines.extend(
