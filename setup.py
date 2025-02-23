@@ -32,5 +32,5 @@ setup(
     keywords="svg outline plotter cutter",
 
     # Requirements
-    install_requires=["PySide6>=6.0.0"],
+    # install_requires=["PySide6>=6.0.0"],
 )
