@@ -1,4 +1,4 @@
-svgoutline
+svgoutline PyQt5 instead PySide6
 ==========
 
 This Python library extracts all strokes (outlines) from an SVG vector graphics
